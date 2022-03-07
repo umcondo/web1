@@ -1,0 +1,10 @@
+body {background-color:lightyellow;}
+p {color:red;text-decoration:underline;}
+div{width:100px; height: 50px;}
+
+.first { background-color: aqua;}
+.second { background-color: green;}
+.third { background-color: yellow;}
+
+.inline{ display: inline;}
+.inline-block{ display: inline-block;}
