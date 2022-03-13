@@ -10,16 +10,17 @@ main {
     /* grid-template-columns: 740px 330px;  각 열(세로줄)의 길이 */
     /* grid-template-rows: 120px 310px 890px 130px; 각 행(가로줄)의 길이 */
     grid-template-columns: repeat(3, 1fr); /* 균일한 크기로 3등분 */
-    grid-template-rows: repeat(24, 24px); /* 40px로 24등분 -> <main>영역의 
+    grid-template-rows: repeat(24, 40px); /* 40px로 24등분 -> <main>영역의 
     전체 height가 계산된다면 height 지정 후 1fr로 사용해도 괜찮다 */
+    padding : 20px 30px;
 }
 
 .temp-box{
-    background: yellow;
+    background: #f2f4f7;
     width: 100%;
     height: 100%;
-    font-size: 40px;
-    border: 1px solid #dee3eb;
+    font-size: 15px;
+    border: 1px solid yellowgreen;
     text-align: center;
 }
 .box-one {
@@ -40,11 +41,11 @@ main {
 }
 .box-four-1{
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 3 / 5;
 }
 .box-four-2{
     grid-column: 3 / 4;
-    grid-row: 4 / 7;
+    grid-row: 5 / 7;
 }
 .box-five {
     grid-column: 1 / 3 ;
