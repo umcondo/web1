@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover active focus disabled nth-child() */
+        [type="button"] {
+            width: 100px; height: 30px;
+            background-color: tomato; color: white;
+            border: none; border-radius:8px;
+        }
+        [type="button"]:hover {
+            background-color: gray;
+        }
+        [type="button"]:active{
+            background-color: black;
+        }
+       
+        [type="text"]:focus{
+            color: white;
+            background-color: red;
+        }
+
+        input:disabled{
+            height:300px;
+        }
+        
+        body > div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box{
+            border: 1px solid black;width: 100px;height: 200px;   
+        }
+        .box:nth-child(2n):active{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="text">선택자 연습하기</h1>
+    <input type="button" value="버튼">
+    <input type="text" placeholder="아무거나쓰기" disabled>
+    <div>
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </div>
+</body>
+</html>

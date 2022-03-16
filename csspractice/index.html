@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            font-size:20px;
+            color:red;
+        }
+        p::first-letter{
+            font-size:30px;
+            color:blue;
+        }
+        li::marker{
+            color:white;
+        }
+        input::placeholder{
+            color:red;
+        }
+        html{
+            background-color:white;
+            color:red;
+        }
+        div {
+            width: 100px;height: 100px;position: relative;
+        }
+        .first{
+            background-color: aqua; z-index:1;
+        }
+        .second{
+            background-color: red; bottom:50px; z-index:0;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, qui? Enim laudantium, inventore ratione molestias, possimus, autem tempore dolore facilis doloribus ipsum delectus ipsa! Debitis labore deserunt ratione delectus magnam!
+    </p>
+    <ul>
+        <li>개</li>
+        <li>개</li>
+        <li>개</li>
+        <li>개</li>
+    </ul>
+    <input type="text" placeholder="TEXT">
+
+    <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+</html>
