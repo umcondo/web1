@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: black;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        left: 0px;
+        /* border: 1px solid #000; */
+        /* transform: translateX(500px); */
+
+        transition: 2s linear;
+      }
+      .box:hover {
+        transform: translateX(500px);
+      }
+      button {
+        position: relative;
+        top: 150px;
+        /* display: inline-block; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button
+      onclick="document.querySelector('.box').style.transition=`2s`;document.querySelector('.box').style.transform=`translateX(${window.innerWidth}px)`"
+    >
+      밀기
+    </button>
+    <button
+      onclick="document.querySelector('.box').style.transform=`translateX(0px)`; document.querySelector('.box').style.transition=`0s`"
+    >
+      당기기
+    </button>
+  </body>
+</html>
